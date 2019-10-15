@@ -1,0 +1,78 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* max-width: 320px (điện thoại di động, hiển thị chiều dọc)
+max-width: 480px (điện thoại di động, hiển thị chiều ngang)
+max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+max-width: 800px (máy tính bảng, hiển thị chiều ngang)
+max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang)
+min-width: 1025px (từ size này trở lên là danh cho desktop thông thường).
+ */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+.search {
+  display: block;
+  margin: 3em;
+  clear: both;
+  background: rebeccapurple;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.search .row {
+  display: block;
+}
+
+.search .row input {
+  width: 100%;
+  height: 3em;
+  margin: 0.3em;
+}
+
+.search .row .fa {
+  position: absolute;
+  margin-left: 23em;
+  margin-top: -2.5em;
+}
+
+.search .row .form-control {
+  width: 100%;
+  height: 3em;
+  margin-left: 0.3em;
+  margin: 0.3em;
+}
+
+.search .row .btn {
+  width: 100%;
+  margin-left: 0.3em;
+  margin: 0.3em;
+}
+
+@media only screen and (min-width: 992px) {
+  .search {
+    width: 50%;
+    position: absolute;
+    top: 47em;
+    left: 15em;
+    z-index: 3;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .search {
+    width: 50%;
+    position: absolute;
+    top: 45em;
+    left: 22em;
+    z-index: 3;
+  }
+}
+/*# sourceMappingURL=search.css.map */

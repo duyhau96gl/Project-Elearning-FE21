@@ -1,0 +1,233 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* max-width: 320px (điện thoại di động, hiển thị chiều dọc)
+max-width: 480px (điện thoại di động, hiển thị chiều ngang)
+max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+max-width: 800px (máy tính bảng, hiển thị chiều ngang)
+max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang)
+min-width: 1025px (từ size này trở lên là danh cho desktop thông thường).
+ */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+.new {
+  display: block;
+  background-color: #fff;
+  margin: 2em auto;
+  width: 100%;
+}
+
+.new .new__title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.new .new__title .heading__title {
+  padding-top: 20px;
+  font-size: 2em;
+  font-weight: 600;
+  color: #034b58;
+}
+
+.new .new__title .title__line {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.new .new__title .title__line::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  left: -30px;
+  top: 12px;
+}
+
+.new .new__title .title__line::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  right: -31px;
+  top: 12px;
+}
+
+.new .new__title .line__icon {
+  background-color: #e9078b;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.new .new__title p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #6a86a9;
+}
+
+.new .new__course {
+  margin: 2em auto;
+}
+
+.new .new__course .course__item {
+  border: 1px solid #e0e8f3;
+  width: 95% !important;
+  margin-right: 25px !important;
+}
+
+.new .new__course .course__item .item__image {
+  position: relative;
+  cursor: pointer;
+}
+
+.new .new__course .course__item .item__image img {
+  z-index: -1;
+  width: 100%;
+  height: 200px;
+}
+
+.new .new__course .course__item .item__time {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  background-color: #fff;
+  color: #4d5c6f;
+  border-top: 1px solid #e0e8f3;
+  cursor: pointer;
+}
+
+.new .new__course .course__item .item__time .months {
+  border-radius: 5px;
+  -moz-boder-radius: 5px;
+  -webkit-boder-radius: 5px;
+  -o-border-radius: 5px;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.new .new__course .course__item .item__time .months a {
+  text-decoration: none;
+  color: #2e384d;
+}
+
+.new .new__course .course__item .item__time .months a:hover {
+  color: crimson;
+}
+
+.new .new__course .course__item .item__time .months a i {
+  color: #4d5c6f;
+  font-weight: 400;
+}
+
+.new .new__course .course__item .item__time .hours {
+  border-radius: 5px;
+  -moz-boder-radius: 5px;
+  -webkit-boder-radius: 5px;
+  -o-border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  margin-left: 3em;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.new .new__course .course__item .item__time .hours a {
+  text-decoration: none;
+  color: #4d5c6f;
+}
+
+.new .new__course .course__item .item__time .hours a:hover {
+  opacity: 0.8;
+  color: crimson;
+}
+
+.new .new__course .course__item .item__time .hours a i {
+  font-weight: 400;
+}
+
+.new .new__course .course__item .item__information {
+  background-color: #fff;
+}
+
+.new .new__course .course__item .item__information .namecourse {
+  color: black;
+}
+
+.new .new__course .course__item .item__information .namecourse:hover {
+  color: crimson;
+}
+
+.new .new__course .course__item .item__information .desc {
+  color: #4d5c6f;
+}
+
+.new .new__course .course__item .item__information .contact img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  -moz-boder-radius: 50%;
+  -webkit-boder-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.new .new__course .course__item .item__information .contact a {
+  float: left;
+}
+
+.new .new__course .course__item .item__information ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  cursor: url(../../images/courselist/cursor.png), move;
+}
+
+.new .new__course .course__item .item__information ul li {
+  width: 100%;
+  list-style: none;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.new .new__course .course__item .item__information ul li a {
+  text-decoration: none;
+  color: #4d5c6f;
+  font-size: 13px;
+}
+
+.new .new__course .course__item .item__information ul li a i {
+  color: #4d5c6f;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 1em;
+  float: right;
+}
+
+.new .new__course .course__item .item__information ul li a i:hover {
+  cursor: pointer;
+}
+
+.new .new__course .slick-next::before, .new .new__course .slick-prev::before {
+  color: #6404f3;
+}
+/*# sourceMappingURL=new.css.map */

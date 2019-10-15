@@ -1,0 +1,117 @@
+// variable color
+$color-black-0: black; // default
+$color-black-light:#505763;
+$color-black-dark: rgba(18, 19, 20, 0.1);
+$color-black-header: #252525;
+$color-white-0: #fff; //default
+$color-white-1: #ccc;
+$color-white-cream:#f2f3f5;
+$color-red-0:#ec5252;
+$color-red-1: #521822;
+$color-purple: #6e1a52;
+$color-gray-1: rgba(20, 23, 28, .05);
+$color-gray-2: #a1a7b3;
+$color-gray-3: #cacbcc;
+$color-gray-4: #686f7a;
+$color-gray-5:#F7F8FA;
+$color-yellow: #F4C150;
+$color-blue:#4586ff;
+$color-blue-2:#007bff;
+$color-yellow1:#d6b161;
+$color-rgba: rgba(244, 240, 245, 0.041);
+$color-rgba-white:rgba(255, 255, 255, 0.7);
+
+// Variable color Content
+$color-btn-0: rgb(129, 14, 236);
+$color-btn-hover:rgba(160, 68, 247, 0.849);
+$color-icon:#E68E0D;
+$color-title:#034b58;
+$color-line-title:rgb(233, 7, 139);
+
+// Color Course
+$color-star-default:#ada9a9;
+$color-star-hover: yellow;
+$color-a:#2e384d;
+$color-text: #4d5c6f;
+$color-border-2:#e0e8f3;
+$bg-item-star: rgba(0, 0, 0, 0.76);
+$bg-item-heart:rgba(0, 0, 0, 0.37);
+$bg-pink:crimson;
+$bg-linear: linear-gradient(to right, rgba(33, 5, 121, 0.8), rgba(86, 69, 17, 0.8));
+$bg-linear-2:linear-gradient( 111.7deg, #1c0fe0 19.9%, #f3335a 95% );
+
+// Color Menu
+$color-bg-menu:rgba(167, 180, 240, 0.274);
+$color-border-menu: #ac18ec29;
+$color-bg-icon-menu:rgba(20,23,28,.05);
+$color-border-icon-menu:#ffc107;
+// Variable color footer
+$bg-color: #222;
+$color: #7e7e7e;
+$color-hover: #e8ebf3;
+$color-border: #333;
+$color-fab: #5a5a5a;
+// variable font-size
+$fs-0: 15px; //default
+$fs-1: 13px;
+$fs-2: 20px;
+$fs-3: 30px;
+//Còn 1 font-size: 36px;
+$fs-4: 40px;
+//variable margin
+$mg-0: 2px;
+$mg-1: 10px;
+$mg-2: 25px;
+$mr-1:0 10px 0 0;
+$mr-2:0 20px 0 0;
+$mr-3:0 30px 0 0;
+$ml-1:0 0 0 10px;
+$ml-2:0 0 0 20px;
+$ml-3:0 0 0 30px;
+// Varialble padding
+$pd-0: 2px;
+$pd-1: 10px;
+$pd-2: 20px;
+$pd-3: 30px;
+
+//variable border-radius
+$border-radius: 2px;
+//variable padding
+$pd-0: 5px; //default
+$pd-1: 10px;
+$pd-2: 20px;
+//variable line-height
+$line-height-0: 1.43; //default
+//variable font-weight
+$fw-normal: normal;
+$fw-bold-2: 200;
+$fw-bold-5: 500;
+$fw-bold-6: 600;
+$fw-bold-4: 400;
+$fw-bold-7: 700;
+$fw-bold: bold;
+//transition
+$transition:all 0.3s;
+//break points
+$breakpoints:( 'extra-large': 1200px, 'large': 992px, 'medium': 768px, 'small': 576px, );
+// Responsive
+
+$mobile:"only screen and (min-width:480px)";
+/* Extra small devices (phones, 600px and down) */
+
+$tablet: "only screen and (min-width: 576px)";
+
+$tablet_large: "only screen and (min-width: 768px)";
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+$laptop_desktop: "only screen and (min-width: 992px)";
+
+$laptop_desktop_large: "only screen and (min-width: 1280px)";
+/* max-width: 320px (điện thoại di động, hiển thị chiều dọc)
+max-width: 480px (điện thoại di động, hiển thị chiều ngang)
+max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+max-width: 800px (máy tính bảng, hiển thị chiều ngang)
+max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang)
+min-width: 1025px (từ size này trở lên là danh cho desktop thông thường).
+ */

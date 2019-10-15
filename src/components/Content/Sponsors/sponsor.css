@@ -1,0 +1,87 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* max-width: 320px (điện thoại di động, hiển thị chiều dọc)
+max-width: 480px (điện thoại di động, hiển thị chiều ngang)
+max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+max-width: 800px (máy tính bảng, hiển thị chiều ngang)
+max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang)
+min-width: 1025px (từ size này trở lên là danh cho desktop thông thường).
+ */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+.sponsor {
+  display: block;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 100%;
+  height: 20em;
+}
+
+.sponsor .sponsor__title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sponsor .sponsor__title .heading__title {
+  padding-top: 2em;
+  font-size: 2em;
+  font-weight: 600;
+  color: #034b58;
+}
+
+.sponsor .sponsor__title .title__line {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.sponsor .sponsor__title .title__line::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  left: -30px;
+  top: 12px;
+}
+
+.sponsor .sponsor__title .title__line::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  right: -31px;
+  top: 12px;
+}
+
+.sponsor .sponsor__title .line__icon {
+  background-color: #e9078b;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.sponsor .sponsor__title p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 1em;
+  color: #6a86a9;
+}
+
+.sponsor .course__list .course__item img {
+  border: 1px solid #e0e8f3;
+}
+/*# sourceMappingURL=sponsor.css.map */

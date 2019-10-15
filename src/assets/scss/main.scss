@@ -1,0 +1,17 @@
+// Base: Chứa file chỉnh sửa mặc định của trình duyệt
+@import "Base/_reset";
+// Vendors: Chứa các thư viện của trang
+
+// Helpers: Chứa biến, mixin, extend,function
+@import "Helpers/_variable";
+@import "Helpers/_mixin";
+@import "Helpers/_extend";
+@import "Helpers/_function";
+
+// Layout: Chứa thành phần chung của trang
+
+// Component: Chứa phần tử nhỏ của trang (button,dropdown,card)
+
+// Page: Chứa thành phần riêng của trang
+
+// Theme: Chứa theme chủ đạo khác nhau của trang : mùa đông thì có màu trắng..

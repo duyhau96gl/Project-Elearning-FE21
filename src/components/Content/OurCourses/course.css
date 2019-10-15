@@ -1,0 +1,197 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* max-width: 320px (điện thoại di động, hiển thị chiều dọc)
+max-width: 480px (điện thoại di động, hiển thị chiều ngang)
+max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+max-width: 800px (máy tính bảng, hiển thị chiều ngang)
+max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang)
+min-width: 1025px (từ size này trở lên là danh cho desktop thông thường).
+ */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+.course {
+  height: 30%;
+  display: block;
+}
+
+.course .banner {
+  background: url(../../images/banner1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+
+.course .banner::before {
+  content: '';
+  background: linear-gradient(111.7deg, #1c0fe0 19.9%, #f3335a 95%);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: -1;
+  opacity: 0.7;
+  top: 0;
+}
+
+.course .banner .course__title {
+  margin: 0 auto;
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+}
+
+.course .banner .course__title .title_item {
+  z-index: 2;
+}
+
+.course .banner .course__title .title_item .heading__title {
+  padding-top: 20px;
+  font-size: 2em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.course .banner .course__title .title_item .title__line {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.course .banner .course__title .title_item .title__line::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  left: -30px;
+  top: 12px;
+}
+
+.course .banner .course__title .title_item .title__line::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  right: -31px;
+  top: 12px;
+}
+
+.course .banner .course__title .title_item .line__icon {
+  background-color: #e9078b;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.course .banner .course__title .title_item p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #6a86a9;
+}
+
+.course .banner .course__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.course .banner .course__content .row {
+  width: 100%;
+}
+
+.course .banner .course__content .row .course__item {
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+  margin: 2.5em auto;
+}
+
+.course .banner .course__content .row .course__item .item__text .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.course .banner .course__content .row .course__item .item__text .text .text__icon {
+  margin-bottom: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 5rem;
+  height: 5rem;
+  padding: 1.5rem;
+  border-radius: 50%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.course .banner .course__content .row .course__item .item__text .text .text__icon i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.course .banner .course__content .row .course__item .item__text .text .text__title {
+  margin-top: 8px;
+  margin-left: 1.5em;
+  text-align: left;
+  font-weight: 400 !important;
+}
+
+.course .banner .course__content .row .course__item .item__image {
+  margin-bottom: 10em;
+}
+
+.course .banner .course__content .row .course__item .item__image .imgour {
+  background-color: #fff;
+  border-radius: 3px;
+  -moz-boder-radius: 3px;
+  -webkit-boder-radius: 3px;
+  -o-border-radius: 3px;
+  padding: 0.3em;
+  margin: 1em;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .course__item .item__image .imgour:nth-child(1) {
+    position: relative;
+    left: -1em;
+    width: 60%;
+    z-index: 0;
+  }
+  .course__item .item__image .imgour:nth-child(2) {
+    position: absolute;
+    width: 60%;
+    left: 15em;
+    top: 3em;
+    z-index: 1;
+  }
+  .course__item .item__image .imgour:nth-child(3) {
+    position: absolute;
+    left: 8em;
+    top: 7em;
+    width: 60%;
+    z-index: 2;
+  }
+}
+/*# sourceMappingURL=course.css.map */

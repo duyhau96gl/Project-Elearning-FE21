@@ -1,0 +1,119 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* max-width: 320px (điện thoại di động, hiển thị chiều dọc)
+max-width: 480px (điện thoại di động, hiển thị chiều ngang)
+max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+max-width: 800px (máy tính bảng, hiển thị chiều ngang)
+max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang)
+min-width: 1025px (từ size này trở lên là danh cho desktop thông thường).
+ */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+.slider {
+  z-index: 0;
+  display: contents;
+  clear: both;
+}
+
+.slider .carousel .carousel-indicators {
+  z-index: 3;
+}
+
+.slider .carousel .carousel-indicators li {
+  width: 10px;
+  height: 0 !important;
+  border-radius: 50%;
+  -moz-boder-radius: 50%;
+  -webkit-boder-radius: 50%;
+  -o-border-radius: 50%;
+  background: #810eec;
+}
+
+.slider .carousel-item {
+  position: relative;
+  background-image: url(../../images/about-img-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  opacity: 0.4;
+}
+
+.slider .carousel-item:nth-child(2) {
+  background-image: url(../../images/img_bg_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+}
+
+.slider .carousel-item:nth-child(3) {
+  background-image: url(../../images/img_bg_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+}
+
+.slider .carousel-item:nth-child(4) {
+  background-image: url(../../images/img_bg_4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+}
+
+.slider .carousel-item:nth-child(5) {
+  background-image: url(../../images/img_bg_5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+}
+
+.slider .carousel-item .desc {
+  margin: 15em auto;
+  color: #fff;
+  text-align: center;
+}
+
+.slider .carousel-item .desc h2 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.slider .carousel-item .desc .btn {
+  border-radius: 15px;
+  -moz-boder-radius: 15px;
+  -webkit-boder-radius: 15px;
+  -o-border-radius: 15px;
+  background: #810eec;
+  color: #fff;
+}
+
+.slider .carousel-item .desc .btn:hover {
+  background: rgba(160, 68, 247, 0.849);
+}
+
+@media only screen and (min-width: 992px) {
+  .carousel .carousel-indicators li {
+    margin-bottom: 9em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .carousel .carousel-indicators li {
+    margin-bottom: 10em;
+  }
+}
+/*# sourceMappingURL=slider.css.map */

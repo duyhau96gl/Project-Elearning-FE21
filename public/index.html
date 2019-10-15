@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/animate.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/flag-icon-css-master/css/flag-icon.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/slick-1.8.1/slick/slick-theme.css">
+    <title>Educa-Project</title>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+
+
+    <script src="%PUBLIC_URL%/bootstrap/js/bootstrap.min.js">
+    </script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="%PUBLIC_URL%/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="%PUBLIC_URL%/js/jquery-3.4.1.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- jQuery library -->
+    <script src="%PUBLIC_URL%/slick-1.8.1/slick/slick.js"></script>
+    <script src="%PUBLIC_URL%/js/jquery.countup.min.js"></script>
+    <script src="%PUBLIC_URL%/js/jquery.waypoints.min.js"></script>
+    <script>
+        $(".counter").countUp();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.course__list').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.trainer__list').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+</body>
+
+</html>

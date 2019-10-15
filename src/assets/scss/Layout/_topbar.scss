@@ -1,0 +1,140 @@
+.header__topbar{
+    @include display-flex();
+    background: rgb(231, 229, 229);
+    height: 25%;
+    .topbar__socials{
+        font-size: 14px;
+        ul{
+            @include display-flex();
+            float: left;
+            li{
+                list-style: none;
+                padding-left: 1em;
+                padding-top: 0.8em;
+                a{
+                    color: $color-icon;
+                }
+            }
+        }
+      
+    }
+    .topbar__contact{
+        display: none;
+    }
+    .topbar__custom{
+        ul{
+            @include display-flex();
+            float: right;
+            li{
+                list-style: none;             
+                padding-top: 0.8em;
+                float: left;
+                a{
+                    @include display-flex();
+                    text-decoration: none;
+                    margin-left: 0.5em;
+                    color: $color-white-0;
+                    span{
+                        display: none;
+                    }
+                    i{
+                        padding-top: 0.2em;
+                        padding-left: 0.2em;
+                        color: $color-icon;
+                    }
+                    &:hover{
+                        color: $color-icon; 
+                    }
+                }
+                .dropdown-menu{
+                    left: -3em !important;
+                    .dropdown-item{
+                        color: $color-black-0;
+                    }
+                }
+            }
+        }
+       
+    }
+    @include responsive_mobile(){
+    }
+    @include responsive_tablet(){
+        .topbar__custom{
+            ul{
+                li{
+                    a{
+                        span{
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+    @include responsive_tablet_large(){
+
+    }
+    @include responsive_desktop(){
+
+        .topbar__contact{
+            display: inline-block;
+            ul{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            clear: both;
+            li{
+                list-style: none;
+                padding-top: 3px;
+                padding-right: 0.5em;
+                .form-control{
+                    width: 100%;
+                    background: #584fd629;
+                    color: $color-icon;
+                    padding: 0 2px;
+                    font-size: 14px;
+                }
+                .btn{
+                    color: $color-white-0;
+                    border: none !important;
+                    font-size: 14px;
+                }
+              
+            }
+         }          
+        }
+        .topbar__custom{
+           
+            ul{
+                float: right;
+                li{
+                    margin-right: 0.5em;
+                    a{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive_desktop_large(){
+        .topbar__socials{
+            font-size: 20px;
+            ul{
+                li{
+                    padding-top: 0.3em;
+                }
+            }
+        }
+        .topbar__contact{
+            display: inline-block;
+        }
+        .topbar__custom{
+            margin-left: 0;
+            ul{
+                float: right;
+            }
+        }
+        
+    }
+}
+
+

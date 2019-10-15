@@ -1,0 +1,150 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* max-width: 320px (điện thoại di động, hiển thị chiều dọc)
+max-width: 480px (điện thoại di động, hiển thị chiều ngang)
+max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+max-width: 800px (máy tính bảng, hiển thị chiều ngang)
+max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang)
+min-width: 1025px (từ size này trở lên là danh cho desktop thông thường).
+ */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+.trainer {
+  height: 100%;
+  display: block;
+  background: url(../../images/banner2.jpg);
+}
+
+.trainer .banner {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 30em;
+  z-index: 1;
+}
+
+.trainer .banner::before {
+  content: '';
+  background: linear-gradient(111.7deg, #1c0fe0 19.9%, #f3335a 95%);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: -1;
+  opacity: 0.7;
+  top: 0;
+}
+
+.trainer .banner .trainer__title {
+  margin: 0 auto;
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+}
+
+.trainer .banner .trainer__title .title_item {
+  z-index: 2;
+}
+
+.trainer .banner .trainer__title .title_item .heading__title {
+  padding-top: 20px;
+  font-size: 2em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.trainer .banner .trainer__title .title_item .title__line {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.trainer .banner .trainer__title .title_item .title__line::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  left: -30px;
+  top: 12px;
+}
+
+.trainer .banner .trainer__title .title_item .title__line::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  right: -31px;
+  top: 12px;
+}
+
+.trainer .banner .trainer__title .title_item .line__icon {
+  background-color: #e9078b;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.trainer .banner .trainer__title .title_item p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.trainer .banner .trainer__content {
+  width: 30%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.trainer .banner .trainer__content .trainer__item {
+  margin: 1em 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.trainer .banner .trainer__content .trainer__item .item__image {
+  border: 4px solid #fff;
+  z-index: 1;
+}
+
+.trainer .banner .trainer__content .trainer__item .slick-active {
+  border: 4px solid #EC296B !important;
+  position: relative !important;
+  z-index: auto !important;
+}
+
+.trainer .banner .trainer__content .trainer__item .slick-active::before {
+  content: "" !important;
+  position: absolute !important;
+  width: 1.5em !important;
+  height: 1.5em !important;
+  background-color: rgba(236, 41, 106, 0.671) !important;
+  border: 4px solid #EC296B !important;
+  bottom: -1em !important;
+  z-index: -1 !important;
+  left: 2.5em !important;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg) !important;
+}
+/*# sourceMappingURL=trainer.css.map */

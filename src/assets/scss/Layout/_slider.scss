@@ -1,0 +1,100 @@
+.slider{
+    z-index: 0;
+    display: contents;
+    clear: both;
+    .carousel{
+        .carousel-indicators{
+            z-index: 3;
+            li{
+                width: 10px;
+                height: 0 !important;
+                @include border-rd(50%);
+                background: $color-btn-0;
+            }
+        }
+    }
+    .carousel-item{
+        position: relative;
+        background-image: url(../../images/about-img-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 650px;
+        opacity: 0.4;
+        &:nth-child(2){
+            background-image: url(../../images/img_bg_2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 650px;
+        }
+        &:nth-child(3){
+            background-image: url(../../images/img_bg_3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 650px;
+        } 
+        &:nth-child(4){
+            background-image: url(../../images/img_bg_4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 650px;
+        } 
+        &:nth-child(5){
+            background-image: url(../../images/img_bg_5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 650px;
+        }
+        .desc{
+            margin: 15em auto;
+            color: $color-white-0;
+            text-align: center;
+            h2{
+                color: $color-rgba-white;
+                font-size: 20px;
+                font-weight: $fw-bold-4;
+            }
+            .btn{
+                @include border-rd(15px);
+                background: $color-btn-0; 
+                color: $color-white-0;
+                &:hover{
+                    background: $color-btn-hover;
+                }
+            }
+        }
+    }       
+}
+   // 480px
+    @include responsive_mobile(){
+    }
+    // 576px
+    @include responsive_tablet(){   
+    }
+    // 768px
+    @include responsive_tablet_large(){
+    }
+    // 992px
+    @include responsive_desktop(){
+    .carousel{
+        .carousel-indicators{
+            li{
+                margin-bottom:9em;  
+            }
+        }
+    }
+}
+    // 1280px
+    @include responsive_desktop_large(){
+      .carousel{
+        .carousel-indicators{
+            li{
+                margin-bottom:10em;  
+            }
+        }
+    }   
+}

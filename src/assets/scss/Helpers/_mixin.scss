@@ -1,0 +1,69 @@
+@mixin transition ($properties1, $properties2) {
+    transition: $properties1 $properties2;
+    -webkit-transition: $properties1 $properties2;
+    -moz-transition: $properties1 $properties2;
+    -o-transition: $properties1 $properties2;
+}
+@mixin display-flex (){
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+}
+// boder
+@mixin border-rd ($properties1) {
+    border-radius: $properties1;
+    -moz-boder-radius: $properties1;
+    -webkit-boder-radius: $properties1;
+    -o-border-radius: $properties1;
+}
+@mixin box-shadow ($properties1, $properties2, $properties3, $properties4, $color) {
+    -webkit-box-shadow: $properties1 $properties2 $properties3 $properties4 $color;
+    box-shadow:$properties1 $properties2 $properties3 $properties4 $color;
+}
+// Responsive
+@mixin reponds-to($breakpoint){
+    @if map-has-key($map: $breakpoints, $key: $breakpoint){
+        $value: map-get($map: $breakpoints, $key:$breakpoint);
+        @media screen and (min-width: $value){
+            @content
+        }
+    }
+    @else{
+        @warn "`{$breakpoint}` isn't in breakpoints";
+    }
+}
+
+
+@mixin responsive_mobile() {
+    @media #{$mobile} {
+        @content;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@mixin responsive_tablet() {
+    @media #{$tablet} {
+        @content;
+    }
+}
+
+@mixin responsive_tablet_large() {
+    @media #{$tablet_large} {
+        @content;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@mixin responsive_desktop() {
+    @media #{$laptop_desktop} {
+        @content;
+    }
+}
+
+@mixin responsive_desktop_large() {
+    @media #{$laptop_desktop_large} {
+        @content;
+    }
+}

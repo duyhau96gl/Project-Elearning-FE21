@@ -1,0 +1,124 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* max-width: 320px (điện thoại di động, hiển thị chiều dọc)
+max-width: 480px (điện thoại di động, hiển thị chiều ngang)
+max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+max-width: 800px (máy tính bảng, hiển thị chiều ngang)
+max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang)
+min-width: 1025px (từ size này trở lên là danh cho desktop thông thường).
+ */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+.dowload {
+  display: block;
+  background-color: #F2F5F9;
+  margin: 2em auto;
+  width: 100%;
+}
+
+.dowload__title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dowload__title .heading__title {
+  padding-top: 20px;
+  font-size: 2em;
+  font-weight: 600;
+  color: #034b58;
+}
+
+.dowload__title .title__line {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.dowload__title .title__line::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  left: -30px;
+  top: 12px;
+}
+
+.dowload__title .title__line::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  right: -31px;
+  top: 12px;
+}
+
+.dowload__title .line__icon {
+  background-color: #e9078b;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.dowload__title p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #6a86a9;
+}
+
+.dowload .dowload__btn {
+  width: 80%;
+  margin: 2em auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.dowload .dowload__btn .item__btn .btn {
+  width: 10em;
+  height: 3em;
+}
+
+.dowload .dowload__btn .item__btn:nth-child(3) {
+  padding-top: 1em;
+}
+
+@media only screen and (min-width: 576px) {
+  .dowload .dowload__btn {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .dowload .dowload__btn .item__btn:nth-child(3) {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .dowload .dowload__btn {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .dowload .dowload__btn {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=dowload.css.map */

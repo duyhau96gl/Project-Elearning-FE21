@@ -1,0 +1,187 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* max-width: 320px (điện thoại di động, hiển thị chiều dọc)
+max-width: 480px (điện thoại di động, hiển thị chiều ngang)
+max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+max-width: 800px (máy tính bảng, hiển thị chiều ngang)
+max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang)
+min-width: 1025px (từ size này trở lên là danh cho desktop thông thường).
+ */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+.categories {
+  display: block;
+}
+
+.categories__title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.categories__title .heading__title {
+  font-size: 2em;
+  font-weight: 600;
+  color: #034b58;
+}
+
+.categories__title .title__line {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.categories__title .title__line::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  left: -30px;
+  top: 12px;
+}
+
+.categories__title .title__line::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  right: -31px;
+  top: 12px;
+}
+
+.categories__title .line__icon {
+  background-color: #e9078b;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.categories__title p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #6a86a9;
+}
+
+.categories__item .categories__icon {
+  position: relative;
+  height: 8em;
+  margin: 1em auto;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #8cb9f0;
+  cursor: pointer;
+  border-radius: 5px;
+  -moz-boder-radius: 5px;
+  -webkit-boder-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.categories__item .categories__icon:hover {
+  -webkit-box-shadow: 5px 5px 25px 10px #ada9a9;
+  box-shadow: 5px 5px 25px 10px #ada9a9;
+  bottom: 5px;
+  -webkit-transition: all 0.7s linear;
+  transition: all 0.7s linear;
+}
+
+.categories__item .categories__icon::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(20, 23, 28, 0.05);
+  height: 8em;
+  width: 20em;
+  opacity: 0.3;
+  left: 18%;
+  top: 55%;
+  border-radius: 50%;
+  -moz-boder-radius: 50%;
+  -webkit-boder-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: -2;
+  -webkit-box-shadow: 5px 5px 10px 5px #888888;
+  box-shadow: 5px 5px 10px 5px #888888;
+}
+
+.categories__item .categories__icon::after {
+  content: "";
+  position: absolute;
+  background-color: #F2F5F9;
+  width: 100%;
+  height: 70%;
+  left: 0;
+  top: 8em;
+  z-index: -1;
+}
+
+.categories__item .categories__icon a {
+  text-decoration: none;
+  color: black;
+}
+
+.categories__item .categories__icon a i {
+  margin-top: 0.6em;
+  color: #5f80bd;
+  font-size: 40px;
+  background: linear-gradient(111.7deg, #1c0fe0 19.9%, #f3335a 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.categories__item .categories__icon a .categories__text {
+  margin-top: 0.5em;
+  font-size: 16px;
+}
+
+.categories__item .categories__icon a .categories__text:hover {
+  color: #f50d53;
+}
+
+@media only screen and (min-width: 576px) {
+  .categories {
+    display: block;
+  }
+  .categories__item .categories__icon::before {
+    width: 10em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .categories {
+    margin-top: 9em;
+  }
+  .categories__item .categories__icon::before {
+    width: 7em;
+    left: 10%;
+  }
+  .categories__item .categories__icon a .categories__text {
+    margin-top: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .categories {
+    display: block;
+  }
+  .categories__item .categories__icon::before {
+    width: 10em;
+    left: 5%;
+  }
+  .categories__item .categories__icon a .categories__text {
+    margin-top: 1.2em;
+  }
+}
+/*# sourceMappingURL=categories.css.map */

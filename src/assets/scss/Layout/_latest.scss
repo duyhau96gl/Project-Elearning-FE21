@@ -1,0 +1,251 @@
+.latest{
+    display: block;
+    background-color: #F2F5F9;
+    margin: 2em auto;;
+    width: 100%;
+    &__title{
+        margin: 0 auto;
+        text-align: center;
+        .heading__title{
+            padding-top: 20px;
+            font-size: 2em;
+            font-weight: $fw-bold-6;
+            color:$color-title;
+        }
+        .title__line{
+            display:inline-block;
+            position: relative;
+            margin-bottom: 8px;
+            &::before{
+                position: absolute;
+                content: "";
+                width: 30px;
+                height: 2px;
+                background: #5f80bd;
+                left: -30px;
+                top: 12px;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                width: 30px;
+                height: 2px;
+                background: #5f80bd;
+                right: -31px;
+                top: 12px;
+            }
+            }
+            .line__icon{
+                background-color: $color-line-title;
+                width: 0.5rem;
+                 height: 0.5rem;
+                 display: inline-block;
+                 position: relative;
+                 -webkit-transform: rotate(45deg);
+                         transform: rotate(45deg);     
+            }
+            p{
+                text-align: center;
+                font-size: 16px;
+                margin-bottom: 0;
+                color: #6a86a9;
+            }
+        }
+    &__course{
+        .course__item{
+            border: 1px solid $color-border-2;
+            width: 95% !important;
+            margin-right: 25px !important;
+            .item__image{
+                          position: relative;
+                          cursor: pointer;
+                          img{
+                              z-index: -1;
+                              width: 100%;
+                              height: 200px;
+                             }
+                          .overlay{
+                                    position: absolute;
+                                    top:0;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    height: 100%;
+                                    background: $bg-linear-2;
+                                    opacity: 0;
+                                    @include transition(.2s,ease);
+                                  }
+                          &:hover > .overlay{
+                                    opacity: 0.8;
+                                  }
+                         .item__icon{
+                                 .star{
+                                      position: absolute;
+                                      bottom: 5px;
+                                      left: 10px;
+                                      @include display-flex();
+                                      background-color:$bg-item-star;
+                                      width: 120px;
+                                      height: 30px;
+                                      text-align: center;
+                                      @include border-rd(2px);
+                                        span{
+                                            color: $color-white-0;
+                                            font-weight: $fw-bold-6;
+                                        }
+                                        .star__item{
+                                            margin: 0 auto;
+                                            cursor: pointer;
+                                            color:$color-star-default;
+                                            &:hover{
+                                                color: $color-star-hover;
+                                            }
+                                        }
+                                        .active{
+                                            color: $color-star-hover;
+                                        }
+                                }
+                                .heart{
+                                        position: absolute;
+                                        top: 10px;
+                                        right: 0;
+                                        @include display-flex();
+                                        .link__item{
+                                            @include border-rd(50%);
+                                            background: $bg-item-heart;
+                                            width: 35px;
+                                            height: 35px;
+                                            text-align: center;
+                                            line-height: 2;
+                                            margin-right: 5px;
+                                            display: inline-block;
+                                            margin-top: 0px;
+                                            a{
+                                                color: $color-white-0;
+                                            }
+                                        }
+                                        .heart__item{
+                                            @include border-rd(50%);
+                                            background: $bg-item-heart ;
+                                            width: 35px;
+                                            height: 35px;
+                                            text-align: center;
+                                            line-height: 2;
+                                            margin-right: 5px;
+                                            display: inline-block;
+                                            margin-top: 0px;
+                                            a{
+                                            color: $color-white-0;
+                                            }
+                                            }
+                                }
+                                .price{
+                                            position: absolute;
+                                            right:15px;
+                                            bottom: 5px;
+                                            @include border-rd(2px);
+                                            background-color:$bg-pink ;
+                                            color: $color-white-0;
+                                            width: 80px;
+                                            height: 30px;
+                                            text-align: center;
+                                }
+                                    }
+            }
+            .item__information{
+                background-color: $color-white-0;
+                .desc{
+                    color: $color-text;  
+                }
+                ul{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    cursor: url(../../images/courselist/cursor.png), move;
+                    li{ 
+                        width: 100%;
+                        list-style: none;
+                        float: left;
+                        margin-bottom: 10px;  
+                        a{
+                            text-decoration: none;
+                            color: $color-text;
+                            font-size: 13px;
+                            i{
+                                color:$color-text
+                            }
+                        }
+                    }
+                }
+            } 
+            .item__time{
+                        display: grid;
+                        grid-template-columns: repeat(2,1fr);
+                        background-color: $color-white-0;
+                        color: $color-text;
+                        border-top: 1px solid $color-border-2;
+                        cursor: url(../../images/courselist/cursor.png), move;
+                        .months{
+                            @include border-rd(5px);
+                            width: 90px;
+                            height: 30px;
+                            text-align: center;
+                            margin-top: 0.5em;
+                            margin-bottom: 0.5em;
+                            border: 1px solid $color-border-2;
+                            &:hover{
+                                background: $color-hover;
+                                }
+                            a{
+                                text-decoration: none;
+                                color: $color-a;
+                                i{
+                                    color: $color-text;
+                                }
+                            }
+                        }
+                        .hours{
+                            @include border-rd(5px);
+                            width: 90px;
+                            height: 30px;
+                            margin-left: 3em;
+                            text-align: center;
+                            margin-top: 0.5em;
+                            margin-bottom: 0.5em;
+                            border: 1px solid $color-border-2;
+                            &:hover{
+                            opacity: 0.8;
+                            }
+                            a{
+                                text-decoration: none;
+                                color: $color-text;
+                                 }    
+                            }
+                            .cart{
+                                .btn{
+                                    width: 90px;
+                                    height: 30px;
+                                    padding: 0;
+                                }
+                                i{
+                                            color: $color-white-0;
+                                            font-size: 20px;
+                                    }                   
+                            }
+                            .buy{
+                                margin-left: 3em;
+                                .btn{
+                                    width: 90px;
+                                    height: 30px;
+                                    padding: 0;
+                                }           
+                            }             
+            }
+
+        }   
+        .slick-next , .slick-prev{  
+        &::before{
+                  color: rgb(100, 4, 243);
+                 }
+        }
+     }    
+}

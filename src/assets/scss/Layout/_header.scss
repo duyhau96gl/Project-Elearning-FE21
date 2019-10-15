@@ -1,0 +1,36 @@
+.header{
+    width: 100%;
+    display: inline-block;
+    &__logo{
+        background: repeating-linear-gradient(45deg, black, transparent 100px);
+        .logo__image{
+            position: absolute;
+            margin: 4em 0 0 10em ;
+        }
+        .logo__icon{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            float: left;
+            margin: 0.5em 0 0 10em;
+            clear: both;
+            li{
+                list-style: none;
+                padding-right: 10px;
+               a{
+                text-decoration: none;
+                color: $color-white-0;
+                background: rgba(0,0,0,0.2);
+                width: 35px;
+                height: 35px;
+                border-radius: 50px;
+                text-align: center;
+                line-height: 2;
+                margin-right: 5px;
+                display: inline-block;
+                margin-top: 0px;
+               }
+            }
+        }
+    }
+}   

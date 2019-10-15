@@ -1,0 +1,334 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* max-width: 320px (điện thoại di động, hiển thị chiều dọc)
+max-width: 480px (điện thoại di động, hiển thị chiều ngang)
+max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+max-width: 800px (máy tính bảng, hiển thị chiều ngang)
+max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang)
+min-width: 1025px (từ size này trở lên là danh cho desktop thông thường).
+ */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+.latest {
+  display: block;
+  background-color: #F2F5F9;
+  margin: 2em auto;
+  width: 100%;
+}
+
+.latest__title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.latest__title .heading__title {
+  padding-top: 20px;
+  font-size: 2em;
+  font-weight: 600;
+  color: #034b58;
+}
+
+.latest__title .title__line {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.latest__title .title__line::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  left: -30px;
+  top: 12px;
+}
+
+.latest__title .title__line::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f80bd;
+  right: -31px;
+  top: 12px;
+}
+
+.latest__title .line__icon {
+  background-color: #e9078b;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.latest__title p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #6a86a9;
+}
+
+.latest__course .course__item {
+  border: 1px solid #e0e8f3;
+  width: 95% !important;
+  margin-right: 25px !important;
+}
+
+.latest__course .course__item .item__image {
+  position: relative;
+  cursor: pointer;
+}
+
+.latest__course .course__item .item__image img {
+  z-index: -1;
+  width: 100%;
+  height: 200px;
+}
+
+.latest__course .course__item .item__image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: linear-gradient(111.7deg, #1c0fe0 19.9%, #f3335a 95%);
+  opacity: 0;
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+}
+
+.latest__course .course__item .item__image:hover > .overlay {
+  opacity: 0.8;
+}
+
+.latest__course .course__item .item__image .item__icon .star {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.76);
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  border-radius: 2px;
+  -moz-boder-radius: 2px;
+  -webkit-boder-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.latest__course .course__item .item__image .item__icon .star span {
+  color: #fff;
+  font-weight: 600;
+}
+
+.latest__course .course__item .item__image .item__icon .star .star__item {
+  margin: 0 auto;
+  cursor: pointer;
+  color: #ada9a9;
+}
+
+.latest__course .course__item .item__image .item__icon .star .star__item:hover {
+  color: yellow;
+}
+
+.latest__course .course__item .item__image .item__icon .star .active {
+  color: yellow;
+}
+
+.latest__course .course__item .item__image .item__icon .heart {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.latest__course .course__item .item__image .item__icon .heart .link__item {
+  border-radius: 50%;
+  -moz-boder-radius: 50%;
+  -webkit-boder-radius: 50%;
+  -o-border-radius: 50%;
+  background: rgba(0, 0, 0, 0.37);
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 2;
+  margin-right: 5px;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.latest__course .course__item .item__image .item__icon .heart .link__item a {
+  color: #fff;
+}
+
+.latest__course .course__item .item__image .item__icon .heart .heart__item {
+  border-radius: 50%;
+  -moz-boder-radius: 50%;
+  -webkit-boder-radius: 50%;
+  -o-border-radius: 50%;
+  background: rgba(0, 0, 0, 0.37);
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 2;
+  margin-right: 5px;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.latest__course .course__item .item__image .item__icon .heart .heart__item a {
+  color: #fff;
+}
+
+.latest__course .course__item .item__image .item__icon .price {
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+  border-radius: 2px;
+  -moz-boder-radius: 2px;
+  -webkit-boder-radius: 2px;
+  -o-border-radius: 2px;
+  background-color: crimson;
+  color: #fff;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+}
+
+.latest__course .course__item .item__information {
+  background-color: #fff;
+}
+
+.latest__course .course__item .item__information .desc {
+  color: #4d5c6f;
+}
+
+.latest__course .course__item .item__information ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  cursor: url(../../images/courselist/cursor.png), move;
+}
+
+.latest__course .course__item .item__information ul li {
+  width: 100%;
+  list-style: none;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.latest__course .course__item .item__information ul li a {
+  text-decoration: none;
+  color: #4d5c6f;
+  font-size: 13px;
+}
+
+.latest__course .course__item .item__information ul li a i {
+  color: #4d5c6f;
+}
+
+.latest__course .course__item .item__time {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  background-color: #fff;
+  color: #4d5c6f;
+  border-top: 1px solid #e0e8f3;
+  cursor: url(../../images/courselist/cursor.png), move;
+}
+
+.latest__course .course__item .item__time .months {
+  border-radius: 5px;
+  -moz-boder-radius: 5px;
+  -webkit-boder-radius: 5px;
+  -o-border-radius: 5px;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px solid #e0e8f3;
+}
+
+.latest__course .course__item .item__time .months:hover {
+  background: #e8ebf3;
+}
+
+.latest__course .course__item .item__time .months a {
+  text-decoration: none;
+  color: #2e384d;
+}
+
+.latest__course .course__item .item__time .months a i {
+  color: #4d5c6f;
+}
+
+.latest__course .course__item .item__time .hours {
+  border-radius: 5px;
+  -moz-boder-radius: 5px;
+  -webkit-boder-radius: 5px;
+  -o-border-radius: 5px;
+  width: 90px;
+  height: 30px;
+  margin-left: 3em;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px solid #e0e8f3;
+}
+
+.latest__course .course__item .item__time .hours:hover {
+  opacity: 0.8;
+}
+
+.latest__course .course__item .item__time .hours a {
+  text-decoration: none;
+  color: #4d5c6f;
+}
+
+.latest__course .course__item .item__time .cart .btn {
+  width: 90px;
+  height: 30px;
+  padding: 0;
+}
+
+.latest__course .course__item .item__time .cart i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.latest__course .course__item .item__time .buy {
+  margin-left: 3em;
+}
+
+.latest__course .course__item .item__time .buy .btn {
+  width: 90px;
+  height: 30px;
+  padding: 0;
+}
+
+.latest__course .slick-next::before, .latest__course .slick-prev::before {
+  color: #6404f3;
+}
+/*# sourceMappingURL=latest.css.map */

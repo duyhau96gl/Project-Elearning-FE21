@@ -1,0 +1,61 @@
+  .search{
+        display: block;
+        margin: 3em;
+        clear: both;
+        background:rebeccapurple;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        .row{
+            display: block;
+            input{
+                width:100%;
+                height: 3em;
+                margin: 0.3em;
+            }
+            .fa{
+                position: absolute;
+                margin-left: 23em;
+                margin-top: -2.5em;
+                }
+            .form-control{
+                width:100%;
+                height: 3em;
+                margin-left: 0.3em;
+                margin: 0.3em;
+            }
+            .btn{
+                width: 100%;
+                margin-left: 0.3em;
+                margin: 0.3em;
+            }
+        }
+    }
+   // 480px
+    @include responsive_mobile(){
+    }
+    // 576px
+    @include responsive_tablet(){   
+    }
+    // 768px
+    @include responsive_tablet_large(){
+    }
+    // 992px
+    @include responsive_desktop(){
+    .search{
+            width: 50%;
+            position: absolute;
+            top: 47em;
+            left: 15em;
+            z-index: 3;
+        }
+    }
+    // 1280px
+    @include responsive_desktop_large(){
+       .search{
+            width: 50%;
+            position: absolute;
+            top: 45em;
+            left: 22em;
+            z-index: 3;
+        } 
+}    

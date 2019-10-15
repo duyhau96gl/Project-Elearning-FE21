@@ -1,0 +1,44 @@
+ .total{
+        height: 30%;
+        display: block;
+        .banner{
+        background: url(../../images/banner1.jpg);
+        background-position: center center;
+        position: relative;
+        height: 100%;
+        z-index: 1;
+        &::before{
+        content: '';
+        background: $bg-linear-2;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        display: block;
+        z-index: 0;
+        opacity: 0.7;
+        top: 0;
+        }
+        .total__content{
+            @include display-flex();
+            .row{
+                width: 100%;
+                .total__item{
+                    color: $color-white-0;
+                    z-index: 2;
+                    text-align: center;
+                    margin: 2.5em auto;
+                    .item__icon{
+                        i{
+                            font-size: 50px;
+                        }
+                    }
+                    .counter{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

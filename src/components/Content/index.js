@@ -10,13 +10,14 @@ import RatedLocation from "./RatedLocations/RatedLocation";
 import Trainer from "./Trainers/Trainer";
 import New from "./News/NewList";
 import Download from "./Download/Download";
+import CoursesContainer from "../../Containers/CoursesContainer";
 export default class index extends Component {
   render() {
     return (
       <div>
         <Search />
         <Categories />
-        <LatestClass />
+        <CoursesContainer />
         <Total />
         <ComingUpList />
         <OurCourse />

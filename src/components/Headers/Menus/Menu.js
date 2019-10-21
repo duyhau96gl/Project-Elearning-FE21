@@ -108,11 +108,11 @@ export default class Menu extends Component {
               </div>
               {/** Icon */}
               <div className=" col-3 col-sm-3 col-md-1 col-lg-2">
-                <a className=" btn btn-info enroll" id="navicon" href>
+                <a className=" btn btn-info enroll" id="navicon" href="#">
                   {" "}
                   Enroll Now
                 </a>
-                <a className=" btn btn-warning phone" id="navicon" href>
+                <a className=" btn btn-warning phone" id="navicon" href="#">
                   <i className="fa fa-phone" />
                 </a>
               </div>

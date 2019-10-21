@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import "./latest.scss";
-export default class LatestItem extends Component {
+export default class CartItem extends Component {
   render() {
-    const { course } = this.props;
+    const { courses } = this.props;
+    console.log(courses);
+
     return (
       <div className="course__item">
         <div className="item__image">
           <a href="#"> </a>
-          <img src={course.hinhAnh} alt="html" />
+          <img src={courses.hinhAnh} alt="html" />
           <div className="overlay" />
           <div className="item__icon">
             <div className="star">
@@ -46,8 +48,8 @@ export default class LatestItem extends Component {
           </div>
         </div>
         <div className="item__information container">
-          <h4 className="namecourse">{course.tenKhoaHoc}</h4>
-          <p className="desc">{course.moTa}</p>
+          <h4 className="namecourse">{courses.tenKhoaHoc}</h4>
+          <p className="desc">{courses.moTa}</p>
           <ul className="contact">
             <li>
               <a href="#">
@@ -58,13 +60,13 @@ export default class LatestItem extends Component {
             <li>
               <a href="#">
                 <i className="fa fa-calendar-alt" />
-                <span> {course.ngayTao}</span>
+                <span> {courses.ngayTao}</span>
               </a>
             </li>
             <li>
               <a href="#">
                 <i className="fa fa-user" />
-                <span> {course.nguoiTao.hoTen}</span>
+                <span> {courses.biDanh}</span>
               </a>
             </li>
             <li>
@@ -88,17 +90,6 @@ export default class LatestItem extends Component {
               <span> : 2 Hours</span>
             </a>
           </div>
-          <div className="cart">
-            <button
-              className="btn btn-danger"
-              onClick={() => this.onAddToCart(course)}
-            >
-              <i className="fa fa-shopping-cart" />
-            </button>
-          </div>
-          <div className="buy">
-            <button className="btn btn-danger">Buy Now</button>
-          </div>
         </div>
       </div>
     );
@@ -109,7 +100,4 @@ export default class LatestItem extends Component {
   Đâu ra: State mới đã có các khóa học được thêm vào giỏ hàng 
   Người tạo: Nguyễn Duy Hậu
   */
-  onAddToCart = courses => {
-    this.props.onAddToCart(courses);
-  };
 }

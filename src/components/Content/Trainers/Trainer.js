@@ -61,7 +61,7 @@ export default class Trainer extends Component {
                     the great explorer of the truth and will unfold in the
                     master-builder of human happiness."
                   </p>
-                  <button type="button" class="btn btn-danger">
+                  <button type="button" className="btn btn-danger">
                     View all Testimonials
                   </button>
                 </div>
@@ -108,7 +108,7 @@ export default class Trainer extends Component {
                     the great explorer of the truth and will unfold in the
                     master-builder of human happiness."
                   </p>
-                  <button type="button" class="btn btn-danger">
+                  <button type="button" className="btn btn-danger">
                     View all Testimonials
                   </button>
                 </div>
@@ -155,7 +155,7 @@ export default class Trainer extends Component {
                     the great explorer of the truth and will unfold in the
                     master-builder of human happiness."
                   </p>
-                  <button type="button" class="btn btn-danger">
+                  <button type="button" className="btn btn-danger">
                     View all Testimonials
                   </button>
                 </div>

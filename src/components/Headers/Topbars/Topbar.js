@@ -157,10 +157,10 @@ export default class Topbar extends Component {
                     {/* Custom */}
                     <div className="topbar__custom col-6 col-sm-6 col-md-6 col-lg-5">
                       <ul>
-                        <li><a href><i className="fa fa-user" /> <span>Register</span></a> </li>
-                        <li><a href><i className="fa fa-sign-in-alt" /> <span>Login</span></a></li>
+                        <li><a href="#"><i className="fa fa-user" /> <span>Register</span></a> </li>
+                        <li><a href="#"><i className="fa fa-sign-in-alt" /> <span>Login</span></a></li>
                         <li className="dropdown">
-                          <a href className="dropdown-toggle" data-toggle="dropdown">
+                          <a href="#" className="dropdown-toggle" data-toggle="dropdown">
                             <i className="fa fa-home" />
                             My Dashboard
                           </a>

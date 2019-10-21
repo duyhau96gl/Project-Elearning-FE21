@@ -6,7 +6,7 @@ import imgAvtOne from "../../../assets/images/new/fmade1.jpg";
 export default class NewItem extends Component {
   render() {
     return (
-      <div className="course__item">
+      <div className="new__item">
         <div className="item__image">
           <a href> </a>
           <img src={imgNewOne} alt="html" />

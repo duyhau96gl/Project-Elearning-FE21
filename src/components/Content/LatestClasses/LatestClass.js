@@ -1,8 +1,46 @@
 import React, { Component } from "react";
 import "./latest.scss";
 import LatestItem from "./LatestItem";
-export default class LatestClass extends Component {
+import Slider from "react-slick";
+
+class LatestClass extends Component {
   render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000,
+      cssEase: "linear",
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
     return (
       <section className="latest">
         <div className="latest__title container">
@@ -16,23 +54,11 @@ export default class LatestClass extends Component {
           </p>
         </div>
         <div className="latest__course container ">
-          <div
-            className=" row course__list"
-            data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'
-          >
-            {/* Course 1 */}
-            <LatestItem />
-            {/* Course 2 */}
-            <LatestItem />
-            {/* Course 3 */}
-            <LatestItem />
-            {/* Course 4 */}
-            <LatestItem />
-            {/* Course 5 */}
-            <LatestItem />
-          </div>
+          <Slider {...settings}>{this.props.children}</Slider>
         </div>
       </section>
     );
   }
 }
+
+export default LatestClass;

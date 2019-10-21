@@ -7,7 +7,7 @@ export default class Search extends Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <input type="text" defaultValue placeholder="Search Courses..." />
+              <input type="text" placeholder="Search Courses..." />
             </div>
             <div className="col-sm-12">
               <input

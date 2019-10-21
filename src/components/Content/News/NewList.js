@@ -17,7 +17,7 @@ export default class NewList extends Component {
         </div>
         <div className="new__course container ">
           <div
-            className=" row course__list"
+            className=" row new__list"
             data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'
           >
             {/* Course 1 */}

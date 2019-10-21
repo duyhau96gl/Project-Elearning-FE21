@@ -16,18 +16,18 @@ export default class Download extends Component {
         </div>
         <div className="download__btn container ">
           <div className="item__btn">
-            <button type="button" class="btn btn-danger">
-              <i class="fab fa-apple"></i> App Store
+            <button type="button" className="btn btn-danger">
+              <i className="fab fa-apple"></i> App Store
             </button>
           </div>
           <div className="item__btn">
-            <button type="button" class="btn btn-primary">
-              <i class="fab fa-android"></i> Gooogle Play
+            <button type="button" className="btn btn-primary">
+              <i className="fab fa-android"></i> Gooogle Play
             </button>
           </div>
           <div className="item__btn">
-            <button type="button" class="btn btn-info">
-              <i class="fab fa-windows"></i> Windows
+            <button type="button" className="btn btn-info">
+              <i className="fab fa-windows"></i> Windows
             </button>
           </div>
         </div>

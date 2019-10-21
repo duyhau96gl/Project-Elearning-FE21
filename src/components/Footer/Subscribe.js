@@ -23,27 +23,27 @@ export default class Subscribe extends Component {
         <ul>
           <li>
             <a>
-              <i class="fab fa-cc-amex"></i>
+              <i className="fab fa-cc-amex"></i>
             </a>
           </li>
           <li>
             <a>
-              <i class="fab fa-cc-visa"></i>
+              <i className="fab fa-cc-visa"></i>
             </a>
           </li>
           <li>
             <a>
-              <i class="fa fa-credit-card"></i>
+              <i className="fa fa-credit-card"></i>
             </a>
           </li>
           <li>
             <a>
-              <i class="fab fa-cc-mastercard"></i>
+              <i className="fab fa-cc-mastercard"></i>
             </a>
           </li>
           <li>
             <a>
-              <i class="fab fa-cc-amazon-pay"></i>
+              <i className="fab fa-cc-amazon-pay"></i>
             </a>
           </li>
         </ul>

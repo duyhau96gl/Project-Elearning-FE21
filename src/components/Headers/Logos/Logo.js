@@ -9,7 +9,7 @@ export default class Logo extends Component {
           <div className="row">
             <div className="col-md-0 col-lg-10 ">
               <div className="logo__image">
-                <a href>
+                <a href="#">
                   <img src={logoimg} alt="logo" />
                 </a>
               </div>
@@ -18,17 +18,17 @@ export default class Logo extends Component {
               <div className="logo__icon">
                 <ul>
                   <li>
-                    <a href>
+                    <a href="#">
                       <i className="fa fa-cog" />
                     </a>
                   </li>
                   <li>
-                    <a href>
+                    <a href="#">
                       <i className="fa fa-user-alt" />
                     </a>
                   </li>
                   <li>
-                    <a href>
+                    <a href="#">
                       <i className="fa fa-shopping-cart" />
                     </a>
                   </li>
